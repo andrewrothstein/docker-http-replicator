@@ -7,6 +7,6 @@ RUN git clone https://github.com/mkorenkov/http-replicator.git
 
 RUN mkdir /tmp/cache
 
-RUN http-replicator -p 8888 -r /tmp/cache
+CMD ["/http-replicator/http-replicator", "-p", "8888", "-r", "/tmp/cache"]
 
 EXPOSE 8888
